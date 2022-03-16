@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "colby-box22"
+  description: "My Dev Box"
+  tags:
+    - 8-vcpu
+    - 32gb-ram
+    - 512gb-storage
+  annotations:
+    github.com/project-slug: msbackstage/colby-box22
+    backstage.io/techdocs-ref: dir:.
+    msft.dev/resource-type: dev-box
+    msft.dev/project-slug: "project-alpha"
+  links:
+    - title: Open in browser
+      url: '#'
+      icon: Computer
+    - title: Open in Remote Desktop
+      url: '#'
+      icon: Code
+
+spec:
+  type: dev-box
+  lifecycle: production
+  owner: "user:colbyw_microsoft.com"
